@@ -15,7 +15,7 @@ This is a quick sample R Markdown document created by Johan showing the map of C
 
 ```{r}
 library(leaflet)
-file.ctd <- "C:\\Users\\jungy\\Documents\\SMI2021-049-CTD.csv"
+file.ctd <- "SMI2021-049-CTD.csv"
 ctd <- read.csv(file.ctd)
 sogm <- leaflet() %>%
   setView(lat = 49.3, lng = -124.0, zoom = 8) %>%
