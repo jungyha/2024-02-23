@@ -11,7 +11,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Strait of Georgia Survey 2022-049 CTD Station Map
 
-This is a quick sample R Markdown document created by Johan showing the map of CTD station in 2022 for Strait of Georgia Program. Leaflet package is used to map the stations.
+This is a quick sample R Markdown created by Johan showing the map of CTD station in 2022 for the Strait of Georgia Program. Leaflet package is used to map the stations.
 
 ```{r}
 library(leaflet)
