@@ -1,0 +1,26 @@
+---
+title: "SMI2021-049-CTD"
+author: "Johan Jung"
+date: "2024-02-23"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Strait of Georgia Survey 2022-049 CTD Station Map
+
+This is a quick sample R Markdown document created by Johan showing the map of CTD station in 2022 for Strait of Georgia Program. Leaflet package is used to map the stations.
+
+```{r}
+library(leaflet)
+file.ctd <- "C:\\Users\\jungy\\Documents\\SMI2021-049-CTD.csv"
+ctd <- read.csv(file.ctd)
+sogm <- leaflet() %>%
+  setView(lat = 49.3, lng = -124.0, zoom = 8) %>%
+  addTiles() %>%
+  addCircleMarkers(lat = ctd$LAT, lng = ctd$LNG, radius = 2)
+sogm
+```
+
